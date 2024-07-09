@@ -1,0 +1,34 @@
+const mockSiteOverviews = [
+    {
+        domain: 'petcoach.co',
+        domain_rating: 75,
+        backlinks: 1800,
+        organic_keywords: 2800
+    },
+    {
+        domain: 'cats.com',
+        domain_rating: 70,
+        backlinks: 1600,
+        organic_keywords: 2500
+    },
+    {
+        domain: 'vin.com',
+        domain_rating: 68,
+        backlinks: 1500,
+        organic_keywords: 2400
+    },
+    {
+        domain: 'merckvetmanual.com',
+        domain_rating: 80,
+        backlinks: 2000,
+        organic_keywords: 3200
+    },
+    {
+        domain: 'medi-vet.com',
+        domain_rating: 72,
+        backlinks: 1700,
+        organic_keywords: 2600
+    }
+];
+
+module.exports = mockSiteOverviews;
