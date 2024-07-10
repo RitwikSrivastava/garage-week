@@ -7,6 +7,8 @@ npm install @babel/core @babel/cli @babel/preset-env
 
 ############################################################################
 
+
+
 Local tools version- 
 
 Java 11
@@ -16,6 +18,8 @@ node 16.19.0
 node server.js
 
 ############################################################################
+
+
 
 API's mocked in this repo : 
 
@@ -35,9 +39,13 @@ API's mocked in this repo :
 
 ############################################################################
 
+
+
 Sample data used are stored inside mockKeywords
 
 ############################################################################
+
+
 
 How is Keyword Gap analysis is performed - 
 
