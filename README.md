@@ -27,7 +27,7 @@ API's mocked in this repo :
 
 
 // API endpoint to get Site Ranking For Keywords as an API
-'/api/site-ranking'
+'/api/site-ranking:domain'
 
 
 //  API to get competitor keywords
