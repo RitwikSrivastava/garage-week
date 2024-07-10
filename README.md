@@ -39,10 +39,12 @@ Sample data used are stored inside mockKeywords
 
 How is Keyword Gap analysis is performed - 
 
-1. Collect Competitor Keywords: 
+1. Collect Competitor Keywords:
+   
    a. Fetches keywords associated with each competitor using the /api/competitor-keywords/:domain endpoint.
+   
    b. Applies a filter (filterBrandName) to exclude keywords containing specified brand names (brandNames).
-2. Retrieves the rankings of the specified domain for the collected unique competitor keywords using getSiteRankingForKeywords(domain, uniqueCompetitorKeywords).
-3. Build keywordGap object to store the comparative analysis data.
-4. Keyword Gap analysis returns a JSON response containing the constructed keywordGap object, providing insights into keyword rankings disparity between the specified domain and its competitors. 
-5. A seperate API endpoint to get mock Google Search Console data for the given domain.'/api/gsc-data/:domain' . 
+3. Retrieves the rankings of the specified domain for the collected unique competitor keywords using getSiteRankingForKeywords(domain, uniqueCompetitorKeywords).
+4. Build keywordGap object to store the comparative analysis data.
+5. Keyword Gap analysis returns a JSON response containing the constructed keywordGap object, providing insights into keyword rankings disparity between the specified domain and its competitors. 
+6. A seperate API endpoint to get mock Google Search Console data for the given domain.'/api/gsc-data/:domain' . 
