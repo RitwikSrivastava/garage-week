@@ -25,6 +25,12 @@ API's mocked in this repo :
 // API endpoint to get mock Google Search Console data for the given domain.
 '/api/gsc-data/:domain'
 
+//API endpoint to get the keywords , search volume and position of competitors .
+'/api/competitors-keywords-data'
+curl -X POST http://localhost:3000/api/competitors-keywords-data \
+    -H "Content-Type: application/json" \
+    -d '{"competitors": ["petcoach.co", "cats.com", "vin.com", "merckvetmanual.com", "medi-vet.com"]}'
+
 // Expose the performKeywordGapAnalysis as an API
 '/api/keyword-gap-analysis/:domain'
 
