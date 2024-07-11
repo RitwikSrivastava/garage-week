@@ -158,6 +158,25 @@ app.get('/api/gsc-data/:domain', (req, res) => {
     res.json(gscmockResponse);
 });
 
+app.post('/api/competitors-keywords-data', async (req, res) => {
+    const { competitors } = req.body;
+
+    try {
+        const competitorsData = {};
+        for (const competitor of competitors) {
+            const keywordsData = (await axios.get(`http://127.0.0.1:${PORT}/api/competitor-keywords/${competitor}`)).data;
+            competitorsData[competitor] = keywordsData.map(keyword => ({
+                keyword: keyword.keyword,
+                searchVolume: keyword.searchVolume, // assuming mockKeywords has searchVolume
+                position: keyword.position
+            }));
+        }
+        res.json(competitorsData);
+    } catch (error) {
+        res.status(500).json({ error: 'Error getting competitors keywords data' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
