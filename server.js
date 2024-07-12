@@ -140,16 +140,16 @@ app.get('/api/keyword-gap-analysis/:domain', async (req, res) => {
 
 const gscmockResponse = {
     "rows": [
-        { "keys": ["pet health tips"], "clicks": 1500, "impressions": 6000, "ctr": 0.25, "position": 4 },
-        { "keys": ["best dog food"], "clicks": 1200, "impressions": 5000, "ctr": 0.24, "position": 3 },
-        { "keys": ["cat grooming tips"], "clicks": 800, "impressions": 4000, "ctr": 0.2, "position": 6 },
-        { "keys": ["pet insurance reviews"], "clicks": 1100, "impressions": 4500, "ctr": 0.24, "position": 5 },
-        { "keys": ["how to train a puppy"], "clicks": 1300, "impressions": 5500, "ctr": 0.24, "position": 2 },
-        { "keys": ["pet adoption guide"], "clicks": 1000, "impressions": 5000, "ctr": 0.2, "position": 7 },
-        { "keys": ["pet friendly hotels"], "clicks": 900, "impressions": 4300, "ctr": 0.21, "position": 8 },
-        { "keys": ["best pet toys"], "clicks": 950, "impressions": 4800, "ctr": 0.2, "position": 9 },
-        { "keys": ["senior pet care"], "clicks": 800, "impressions": 4100, "ctr": 0.19, "position": 10 },
-        { "keys": ["pet dental care"], "clicks": 850, "impressions": 4200, "ctr": 0.2, "position": 11 }
+        { "keys": ["pet health tips"], "clicks": 1500, "impressions": 6000, "ctr": 0.25, "position": 5 },
+        { "keys": ["best dog food"], "clicks": 1200, "impressions": 5000, "ctr": 0.24, "position": 6 },
+        { "keys": ["cat grooming tips"], "clicks": 1050, "impressions": 4000, "ctr": 0.2, "position": 7 },
+        { "keys": ["pet adoption guide"], "clicks": 1000, "impressions": 4500, "ctr": 0.24, "position": 8 },
+        { "keys": ["how to train a puppy"], "clicks": 900, "impressions": 4500, "ctr": 0.24, "position": 9 },
+        { "keys": ["best cat food"], "clicks": 750, "impressions": 5000, "ctr": 0.2, "position": 10 },
+        { "keys": ["pet insurance"], "clicks": 700, "impressions": 4300, "ctr": 0.21, "position": 11 },
+        { "keys": ["best pet toys"], "clicks": 1350, "impressions": 4800, "ctr": 0.2, "position": 1 },
+        { "keys": ["senior pet care"], "clicks": 1100, "impressions": 4100, "ctr": 0.19, "position": 5 },
+        { "keys": ["pet dental care"], "clicks": 1050, "impressions": 4200, "ctr": 0.2, "position": 6 }
     ]
 };
 
